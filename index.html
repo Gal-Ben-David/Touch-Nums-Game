@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>TouchNum Game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInitGame()">
+    <div class="gameZone">
+        <h1>Touch 'Em</h1>
+
+        <h2>Next Number: 1</h2>
+
+        <div class="boardArea">
+            <table>
+                <tbody class="board">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="timer" id="timer">00 : 000</div>
+
+        <button onclick="onInitGame()">New Game</button>
+
+        <div class="difficulty">
+            <h2>Difficulty</h2>
+            <table>
+                <tr>
+                    <td onclick="createBoard(9)">9</td>
+                    <td onclick="createBoard(16)">16</td>
+                    <td onclick="createBoard(25)">25</td>
+                    <td onclick="createBoard(36)">36</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>
